@@ -15,225 +15,247 @@
   </head>
   <body>
     <header class="header">
-      <img class="header__logo" src="./images/header-logo.svg" alt="FoodTime" />
-      <ul class="header__menu">
-        <li class="header__menu-item">Home</li>
-        <li class="header__menu-item">Blog</li>
-        <li class="header__menu-item">About us</li>
-        <select class="header__menu-list" name="language">
-          <option value="EN">EN</option>
-          <option value="UA">UA</option>
-        </select>
-      </ul>
-      <button class="button header__login" type="button">Login</button>
-      <button class="button header__cart" type="button">
-        <svg class="header__cart-icon" width="28px" height="30px">
-          <use href="./images/icons.svg#icon-cart"></use>
-        </svg>
-      </button>
+      <div class="container">
+        <img
+          class="header__logo"
+          src="./images/header-logo.svg"
+          alt="FoodTime"
+        />
+        <ul class="header__menu">
+          <li class="header__menu-item">Home</li>
+          <li class="header__menu-item">Blog</li>
+          <li class="header__menu-item">About us</li>
+          <select class="header__menu-list" name="language">
+            <option value="EN">EN</option>
+            <option value="UA">UA</option>
+          </select>
+        </ul>
+        <button class="button header__login" type="button">Login</button>
+        <button class="button header__cart" type="button">
+          <svg class="header__cart-icon" width="28px" height="30px">
+            <use href="./images/icons.svg#icon-cart"></use>
+          </svg>
+        </button>
+      </div>
     </header>
     <main>
       <div class="hero-section">
-        <h1 class="hero-section__title">
-          Order food online from your favourite local restaurants
-          <span class="color">.</span>
-        </h1>
-        <p class="hero-section__text">
-          Freshly made food delivered to your door.
-        </p>
-        <div class="hero-section__search">
-          <svg class="hero-section__search-icon" width="49px" height="49px">
-            <use href="./images/icons.svg#icon-sight"></use>
-          </svg>
-          <input
-            type="search"
-            class="hero-section__input"
-            placeholder="Enter your location"
-          />
-          <button type="button" class="button hero-section__search-btn">
-            <svg class="hero-section__search-icon" width="18px" height="18px">
-              <use href="./images/icons.svg#icon-search"></use>
+        <div class="container">
+          <h1 class="hero-section__title">
+            Order food online from your favourite local restaurants
+            <span class="color">.</span>
+          </h1>
+          <p class="hero-section__text">
+            Freshly made food delivered to your door.
+          </p>
+          <div class="hero-section__search">
+            <svg class="hero-section__search-icon" width="49px" height="49px">
+              <use href="./images/icons.svg#icon-sight"></use>
+            </svg>
+            <input
+              type="search"
+              class="hero-section__input"
+              placeholder="Enter your location"
+            />
+            <button type="button" class="button hero-section__search-btn">
+              <svg class="hero-section__search-icon" width="18px" height="18px">
+                <use href="./images/icons.svg#icon-search"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="hero-section__delivery">
+            <svg class="hero-section__delivery-icon" width="40px" height="40px">
+              <use href="./images/icons.svg#icon-tick"></use>
+            </svg>
+            <h2 class="hero-section__delivery-title">200k+</h2>
+            <p class="hero-section__delivery-text">People Delivered</p>
+          </div>
+          <img src="./images/hero-section.jpg" alt="Omlet" />
+        </div>
+      </div>
+      <div class="explore-section">
+        <div class="container">
+          <h2 class="explore-section__title">
+            Explore your favourite city’s food.
+          </h2>
+          <p class="explore-section__text">
+            Lorem ipsum dolor sit amet consectetur. Ornare massa nunc nibh
+            tristique. Non ligula tristique ut ut libero sit convallis maecenas.
+            At egestas auctor porta mattis.
+          </p>
+          <button type="button" class="button explore-section__btn">
+            Explore
+            <svg class="explore-section__btn-icon" width="16px" height="11px">
+              <use href="./images/icons.svg#icon-arrow"></use>
             </svg>
           </button>
         </div>
-        <div class="hero-section__delivery">
-          <svg class="hero-section__delivery-icon" width="40px" height="40px">
-            <use href="./images/icons.svg#icon-tick"></use>
-          </svg>
-          <h2 class="hero-section__delivery-title">200k+</h2>
-          <p class="hero-section__delivery-text">People Delivered</p>
-        </div>
-        <img src="./images/hero-section.jpg" alt="Omlet" />
-      </div>
-      <div class="explore-section">
-        <h2 class="explore-section__title">
-          Explore your favourite city’s food.
-        </h2>
-        <p class="explore-section__text">
-          Lorem ipsum dolor sit amet consectetur. Ornare massa nunc nibh
-          tristique. Non ligula tristique ut ut libero sit convallis maecenas.
-          At egestas auctor porta mattis.
-        </p>
-        <button type="button" class="button explore-section__btn">
-          Explore
-          <svg class="explore-section__btn-icon" width="16px" height="11px">
-            <use href="./images/icons.svg#icon-arrow"></use>
-          </svg>
-        </button>
       </div>
       <div class="assets-section">
-        <ul class="assets-section__block">
-          <li class="assets-section__items">
-            <img
-              class="assets-section__items-img"
-              src="./images/Frame.png"
-              alt="icon"
-            />
-            <h3 class="assets-section__items-title">
-              Wide selection of restaurants
-            </h3>
-            <p class="assets-section__items-text">
-              Lorem ipsum dolor sit amet consectetur. Ornare massa nunc nibh
-              tristique.
-            </p>
-          </li>
-          <li class="assets-section__items">
-            <img
-              class="assets-section__items-img"
-              src="./images/Frame-1.png"
-              alt="icon"
-            />
-            <h3 class="assets-section__items-title">Easy ordering process</h3>
-            <p class="assets-section__items-text">
-              Lorem ipsum dolor sit amet consectetur. Ornare massa nunc .
-            </p>
-          </li>
-          <li class="assets-section__items">
-            <img
-              class="assets-section__items-img"
-              src="./images/Frame-2.png"
-              alt="icon"
-            />
-            <h3 class="assets-section__items-title">
-              Fast delivery within 20 min
-            </h3>
-            <p class="assets-section__items-text">
-              Lorem ipsum dolor sit amet consectetur. Ornare massa nunc nibh.
-            </p>
-          </li>
-        </ul>
+        <div class="container">
+          <ul class="assets-section__block">
+            <li class="assets-section__items">
+              <img
+                class="assets-section__items-img"
+                src="./images/Frame.png"
+                alt="icon"
+              />
+              <h3 class="assets-section__items-title">
+                Wide selection of restaurants
+              </h3>
+              <p class="assets-section__items-text">
+                Lorem ipsum dolor sit amet consectetur. Ornare massa nunc nibh
+                tristique.
+              </p>
+            </li>
+            <li class="assets-section__items">
+              <img
+                class="assets-section__items-img"
+                src="./images/Frame-1.png"
+                alt="icon"
+              />
+              <h3 class="assets-section__items-title">Easy ordering process</h3>
+              <p class="assets-section__items-text">
+                Lorem ipsum dolor sit amet consectetur. Ornare massa nunc .
+              </p>
+            </li>
+            <li class="assets-section__items">
+              <img
+                class="assets-section__items-img"
+                src="./images/Frame-2.png"
+                alt="icon"
+              />
+              <h3 class="assets-section__items-title">
+                Fast delivery within 20 min
+              </h3>
+              <p class="assets-section__items-text">
+                Lorem ipsum dolor sit amet consectetur. Ornare massa nunc nibh.
+              </p>
+            </li>
+          </ul>
+        </div>
       </div>
       <div class="business-section">
-        <h2 class="business-section__title">Want to be a part of Foodtime?</h2>
-        <p class="business-section__text">
-          List your restaurant or shop on foodtime.
-        </p>
-        <button class="button business-section__btn" type="button">
-          Get started
-          <svg class="business-section__btn-icon" width="16px" height="11px">
-            <use href="./images/icons.svg#icon-arrow"></use>
-          </svg>
-        </button>
-      </div>
-      <div class="asked-section">
-        <h2 class="asked-section__title">Frequently asked questions</h2>
-        <div class="asked-section__buttons">
-          <button class="button asked-section__buttons-btn" type="button">
-            General
-          </button>
-          <button class="button asked-section__buttons-btn" type="button">
-            For business
+        <div class="container">
+          <h2 class="business-section__title">
+            Want to be a part of Foodtime?
+          </h2>
+          <p class="business-section__text">
+            List your restaurant or shop on foodtime.
+          </p>
+          <button class="button business-section__btn" type="button">
+            Get started
+            <svg class="business-section__btn-icon" width="16px" height="11px">
+              <use href="./images/icons.svg#icon-arrow"></use>
+            </svg>
           </button>
         </div>
-        <div class="asked-section__questions">
-          <p class="asked-section__questions-item">
-            What de I need to apply for the account?
-          </p>
-          <p class="asked-section__questions-item">
-            How the subscription process works?
-          </p>
-          <p class="asked-section__questions-item">
-            What de I need to apply for the account?
-          </p>
-          <p class="asked-section__questions-item">
-            What de I need to apply for the account?
-          </p>
-          <p class="asked-section__questions-item">
-            What de I need to apply for the account?
-          </p>
-          <p class="asked-section__questions-item">
-            Is foodtime available 24 hours?
-          </p>
-          <p class="asked-section__questions-item">
-            Is there any hidden fee included?
-          </p>
+      </div>
+      <div class="asked-section">
+        <div class="container">
+          <h2 class="asked-section__title">Frequently asked questions</h2>
+          <div class="asked-section__buttons">
+            <button class="button asked-section__buttons-btn" type="button">
+              General
+            </button>
+            <button class="button asked-section__buttons-btn" type="button">
+              For business
+            </button>
+          </div>
+          <div class="asked-section__questions">
+            <p class="asked-section__questions-item">
+              What de I need to apply for the account?
+            </p>
+            <p class="asked-section__questions-item">
+              How the subscription process works?
+            </p>
+            <p class="asked-section__questions-item">
+              What de I need to apply for the account?
+            </p>
+            <p class="asked-section__questions-item">
+              What de I need to apply for the account?
+            </p>
+            <p class="asked-section__questions-item">
+              What de I need to apply for the account?
+            </p>
+            <p class="asked-section__questions-item">
+              Is foodtime available 24 hours?
+            </p>
+            <p class="asked-section__questions-item">
+              Is there any hidden fee included?
+            </p>
+          </div>
         </div>
       </div>
       <div class="app-section">
-        <h2 class="app-section__title">Put us in your pocket</h2>
-        <p class="app-section__text">
-          Download our app from google play or app store and you don’t have to
-          be worry about your food anymore.
-        </p>
-        <div class="app-section__links">
-          <a class="app-section__link" href="#" target="_blank"
-            ><img
-              src="./images/AppStore.png"
-              alt="appstore"
-              width="243"
-              height="89"
-          /></a>
-          <a class="app-section__link" href="#" target="_blank"
-            ><img
-              src="./images/GooglePlay.png"
-              alt="googleplay"
-              width="243"
-              height="89"
-          /></a>
+        <div class="container">
+          <h2 class="app-section__title">Put us in your pocket</h2>
+          <p class="app-section__text">
+            Download our app from google play or app store and you don’t have to
+            be worry about your food anymore.
+          </p>
+          <div class="app-section__links">
+            <a class="app-section__link" href="#" target="_blank"
+              ><img
+                src="./images/AppStore.png"
+                alt="appstore"
+                width="243"
+                height="89"
+            /></a>
+            <a class="app-section__link" href="#" target="_blank"
+              ><img
+                src="./images/GooglePlay.png"
+                alt="googleplay"
+                width="243"
+                height="89"
+            /></a>
+          </div>
+          <img
+            src="./images/mobile-app.jpg"
+            alt="mobileApp"
+            width="711"
+            height="474"
+          />
         </div>
-        <img
-          src="./images/mobile-app.jpg"
-          alt="mobileApp"
-          width="711"
-          height="474"
-        />
       </div>
     </main>
     <footer class="footer">
-      <div class="footer__block">
-        <img class="footer__block-logo" src="./images/logo.svg" alt="Logo" />
-        <p class="footer__block-text">
-          Lorem ipsum dolor sit amet consectetur. Odio amet natoque tortor
-          convallis. Bibendum sapien suspendisse ipsum urna malesuada elit.
-          Bibendum vitae nibh scelerisque sed aliquam ullamcorper est.
-        </p>
-      
-      <div class="footer__links">
-        <p class="footer__links-title">Quick links</p>
-        <ul class="footer__links-list">
-          <li class="footer__links-item">Browse Foodtime</li>
-          <li class="footer__links-item">Browse Food tim</li>
-          <li class="footer__links-item">Registrations</li>
-        </ul>
+      <div class="container">
+        <div class="footer__block">
+          <img class="footer__block-logo" src="./images/logo.svg" alt="Logo" />
+          <p class="footer__block-text">
+            Lorem ipsum dolor sit amet consectetur. Odio amet natoque tortor
+            convallis. Bibendum sapien suspendisse ipsum urna malesuada elit.
+            Bibendum vitae nibh scelerisque sed aliquam ullamcorper est.
+          </p>
+  
+          <div class="footer__links">
+            <p class="footer__links-title">Quick links</p>
+            <ul class="footer__links-list">
+              <li class="footer__links-item">Browse Foodtime</li>
+              <li class="footer__links-item">Browse Food tim</li>
+              <li class="footer__links-item">Registrations</li>
+            </ul>
+          </div>
+          <div class="footer__contacts">
+            <p class="footer__contacts-title">About</p>
+            <ul class="footer__contacts-list">
+              <li class="footer__contacts-item">About us</li>
+              <li class="footer__contacts-item">Mission</li>
+              <li class="footer__contacts-item">Contacts</li>
+            </ul>
+          </div>
+          <div class="footer__social">
+            <p class="footer__social-title">Social</p>
+            <ul class="footer__social-list">
+              <li class="footer__social-item">Facebook</li>
+              <li class="footer__social-item">Twitter</li>
+              <li class="footer__social-item">Instagram</li>
+            </ul>
+          </div>
+        </div>
+        <p class="footer__root">© 2023 Nayeemur R Sakib</p>
       </div>
-      <div class="footer__contacts">
-        <p class="footer__contacts-title">About</p>
-        <ul class="footer__contacts-list">
-          <li class="footer__contacts-item">About us</li>
-          <li class="footer__contacts-item">Mission</li>
-          <li class="footer__contacts-item">Contacts</li>
-        </ul>
-      </div>
-      <div class="footer__social">
-        <p class="footer__social-title">Social</p>
-        <ul class="footer__social-list">
-          <li class="footer__social-item">Facebook</li>
-          <li class="footer__social-item">Twitter</li>
-          <li class="footer__social-item">Instagram</li>
-        </ul>
-      </div>
-    </div>
-  <p class="footer__root">© 2023 Nayeemur R Sakib</p>
     </footer>
   </body>
 </html>

@@ -18,11 +18,12 @@
   <body>
     <header class="header">
       <div class="container">
-        <img
-          class="header__logo"
+        <nav class="header__nav">
+          <a href="./index.html"><img
+          class="header__nav-logo"
           src="./images/header-logo.svg"
           alt="FoodTime"
-        />
+        /></a>
         <ul class="header__menu">
           <li class="header__menu-item">Home</li>
           <li class="header__menu-item">Blog</li>
@@ -32,50 +33,53 @@
             <option value="UA">UA</option>
           </select>
         </ul>
-        <button class="button header__login" type="button">Login</button>
-        <button class="button header__cart" type="button">
-          <svg class="header__cart-icon" width="28px" height="30px">
+        <div class="header__buttons">
+          <button class="button header__buttons-login" type="button">Login</button>
+        <button class="button header__buttons-cart" type="button">
+          <svg class="button__icon" width="28px" height="30px">
             <use href="./images/icons.svg#icon-cart"></use>
           </svg>
         </button>
+        </div>
+        </nav>
       </div>
     </header>
     <main>
       <div class="hero-section">
         <div class="container">
-          <h1 class="hero-section__title">
-            Order food online from your favourite local restaurants
-            <span class="color">.</span>
-          </h1>
-          <p class="hero-section__text">
-            Freshly made food delivered to your door.
-          </p>
-          <div class="hero-section__search">
-            <svg class="hero-section__search-icon" width="49px" height="49px">
-              <use href="./images/icons.svg#icon-sight"></use>
-            </svg>
-            <input
-              type="search"
-              class="hero-section__input"
-              placeholder="Enter your location"
-            />
-            <button type="button" class="button hero-section__search-btn">
-              <svg class="hero-section__search-icon" width="18px" height="18px">
-                <use href="./images/icons.svg#icon-search"></use>
-              </svg>
-            </button>
+          <div class="hero-section__container">
+            <div class="hero-section__block">
+              <h1 class="hero-section__title">
+                Order food online from your favourite local restaurants
+                <span class="color">.</span>
+              </h1>
+              <p class="hero-section__text">
+                Freshly made food delivered to your door.
+              </p>
+              <form class="hero-section__search">
+                <!-- <img class=".hero-section__search-icon" src="./images/sight.png" alt="search"> -->
+                <input
+                  type="search"
+                  class="hero-section__search-input"
+                  placeholder="          Enter your location"
+                />
+                <input type="submit" class="button hero-section__search-btn" value="Search"/>              
+              </form>
+            </div>
+           <div class="hero-section__delivery">  
+              <div class="hero-section__delivery-block">
+                <h2 class="hero-section__delivery-title"> 
+                  <svg class="hero-section__delivery-icon" width="40px" height="40px">
+                    <use href="./images/icons.svg#icon-tick"></use>
+                  </svg>200k+</h2>
+                <p class="hero-section__delivery-text">People Delivered</p>
+              </div>
+              <img class="hero-section__img" src="./images/hero-section.png" alt="Omlet" />
+            </div> 
           </div>
-          <div class="hero-section__delivery">
-            <svg class="hero-section__delivery-icon" width="40px" height="40px">
-              <use href="./images/icons.svg#icon-tick"></use>
-            </svg>
-            <h2 class="hero-section__delivery-title">200k+</h2>
-            <p class="hero-section__delivery-text">People Delivered</p>
-          </div>
-          <img src="./images/hero-section.jpg" alt="Omlet" />
         </div>
       </div>
-      <div class="explore-section">
+      <!-- <div class="explore-section">
         <div class="container">
           <h2 class="explore-section__title">
             Explore your favourite city’s food.
@@ -219,9 +223,9 @@
             height="474"
           />
         </div>
-      </div>
+      </div> -->
     </main>
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container">
         <div class="footer__block">
           <img class="footer__block-logo" src="./images/logo.svg" alt="Logo" />
@@ -258,6 +262,6 @@
         </div>
         <p class="footer__root">© 2023 Nayeemur R Sakib</p>
       </div>
-    </footer>
+    </footer> -->
   </body>
 </html>

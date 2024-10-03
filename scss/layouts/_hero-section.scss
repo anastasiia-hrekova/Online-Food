@@ -1,0 +1,112 @@
+.hero-section {
+  @include center;
+  background-color: rgb(107, 145, 66, 0.1);
+
+  &__container {
+    @include center;
+    flex-direction: row;
+    padding-top: 194px;
+    padding-bottom: 80px;
+  }
+
+  &__block{
+    display: flex;
+    flex-direction: column;
+    width: 714px;
+   
+  }
+
+  &__title {
+    font-family: "Merienda", sans-serif;
+    @include text(65px, 700, 1.3);
+    color: var(--color-primary);
+    width: 682px;
+    margin-left: 34px;
+    margin-bottom: 0;
+  }
+
+  
+  &__text{
+    @include text(24px, 600, 1.4);
+    color: var( --color-paragraph);
+    text-align: left;
+    margin-left: 34px;
+  }
+
+  &__search{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 34px;
+    
+    &-input{
+        position: relative;
+        @include size(714px, 69px);
+        border: 2px solid rgb(57, 108, 3, 0.3);
+        border-radius: 120px; 
+        background-image: url('../images/sight.png') no-repeat left;
+        background: transparent;
+        @include text(22px, 500, 1.7);
+        color: var(--color-disable-button);
+    }
+
+    // &-icon{
+    //     position: absolute;
+    //     @include size(49px, 49px);
+        
+    // }
+
+    &-btn{
+        display: flex;
+        @include size(210px, 58px);
+        border-radius: 100px;
+        
+    }
+
+  }
+
+  &__delivery {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+
+    &-block {
+        @include center;
+        position: absolute;
+      flex-direction: column;
+      @include size(245px, 118px);
+      backdrop-filter: blur(12px);
+      background: linear-gradient(
+        180deg,
+        #fff 0%,
+        rgba(255, 255, 255, 0.4) 30% 
+      );
+      border-radius: 9px;
+         top: 154px;
+         right: 186px;
+    }
+
+    &-title{
+        @include center;
+        @include text(40px, 700, 1.3);
+        color: var(--color-secondary);
+        margin: 0;
+    }
+
+    &-icon{
+        fill: var(--color-secondary);
+        margin-right: 13px;
+    }
+
+    &-text{
+        @include text(21px, 600, 1.3);
+        color: #838383;
+        margin: 0;
+        text-align: center;
+    }
+  }
+ 
+  &__img{
+    z-index: -1;
+  }
+}

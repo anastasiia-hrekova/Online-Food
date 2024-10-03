@@ -1,0 +1,10 @@
+.button{
+    background-color: var(--color-primary);
+    border: none;
+    color: #fff;
+    @include text(20px, 500, 1.7);
+
+    &__icon{
+        fill: #fff;
+    }
+}

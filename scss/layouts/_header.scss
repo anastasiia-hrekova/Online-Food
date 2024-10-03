@@ -20,8 +20,7 @@
         @include size(150px, 50px);
         margin-right: 316px;
         flex-grow: 1;
-    }
-    
+    }    
         
  }
 
@@ -35,8 +34,8 @@
     margin-right: 94px;
 
 
-
     &-list{
+        font-family: "Poppins", sans-serif;
         @include text(18px, 500, 2);
         color: var(--color-black);
         border: none;
@@ -53,13 +52,21 @@
 
     &-login{
         @include size(154px, 58px);
-        border-radius: 225px;              
+        border-radius: 225px;  
+        
+        &:hover{
+            background-color: var(--color-secondary); 
+        }
     }
 
     &-cart{
         @include center;
         @include size(60px, 60px);
         border-radius: 100%;  
+
+        &:hover{
+            background-color: var(--color-secondary); 
+        }
         
     }
  }

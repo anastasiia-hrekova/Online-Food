@@ -3,8 +3,8 @@
     border: none;
     color: #fff;
     @include text(20px, 500, 1.7);
+    font-family: "Poppins", sans-serif;
+   
+    
 
-    &__icon{
-        fill: #fff;
-    }
 }

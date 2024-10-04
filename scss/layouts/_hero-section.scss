@@ -63,7 +63,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-left: -26px;
+  
 
     &-input {
       position: relative;
@@ -74,13 +74,17 @@
       @include text(22px, 500, 1.7);
       color: var(--color-disable-button);
       padding-left: 70px;
+
+      
     }
 
     &-icon {
       @include center;
       position: absolute;
       @include size(49px, 49px);
-      transform: translateX(60px);
+      transform: translateX(10px);
+      z-index: 1;
+      pointer-events: none;
     }
 
     &-btn {
@@ -90,7 +94,7 @@
       @include size(210px, 69px);
       gap: 8px;
       border-radius: 100px;
-      transform: translateX(540px);
+      transform: translateX(510px);
 
       &:hover{
         background-color: var(--color-secondary); 

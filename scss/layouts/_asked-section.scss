@@ -57,18 +57,21 @@
 
     &__question {
         display: flex;
+        justify-content: space-between;
         align-items: center;
         text-align: left;
         @include text(18px, 500, 2);
         color: #000;
-        
-     
+        padding-right: 15px;
+      
 
     }
 
     &__details{
         border: 1px solid rgba(0, 0, 0, 0.3);
         border-radius: 10px;
+        height: 82px;
+        align-content: center;
         font-family: "Poppins", sans-serif;
         @include text(18px, 400, 1.6);
         color: #000;
@@ -81,9 +84,13 @@
 }
 
 details[open] {
-    padding: 0 15px 15px;
+    padding:  30px 15px;
+    height: auto;
+
 }
 
 details[open] summary{
     border: none;
+    padding-right: 0;
+    padding-bottom: 20px;
 }

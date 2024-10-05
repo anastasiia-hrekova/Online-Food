@@ -1,30 +1,26 @@
-.header{ 
+.header {
+  @include center;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-bottom: 1px solid rgb(63, 63, 63, 0.2);
+  padding-bottom: 20px;
+
+  &__nav {
     @include center;
-    width: 100%;  
-    position: absolute;
-    top: 0;
-    left: 0; 
-    border-bottom: 1px solid rgb(63, 63, 63, 0.2);
-    padding-bottom: 20px;
-        
-    
- &__nav{
-    @include center;
-    width: 1240px;
+    max-width: 1240px;
     padding-top: 20px;
-   
-    
 
-    &-logo{
-        display: flex;
-        @include size(150px, 50px);
-        margin-right: 316px;
-        flex-grow: 1;
-    }    
-        
- }
+    &-logo {
+      display: flex;
+      @include size(150px, 50px);
+      margin-right: 316px;
+      flex-grow: 1;
+    }
+  }
 
- &__menu{
+  &__menu {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -33,43 +29,50 @@
     color: var(--color-black);
     margin-right: 94px;
 
-
-    &-list{
-        font-family: "Poppins", sans-serif;
-        @include text(18px, 500, 2);
-        color: var(--color-black);
-        border: none;
-        background-color: transparent;
+    &-list {
+      font-family: "Poppins", sans-serif;
+      @include text(18px, 500, 2);
+      color: var(--color-black);
+      border: none;
+      background-color: transparent;
     }
-    
- }
- 
- &__buttons{
+  }
+
+  &__buttons {
     display: flex;
     justify-content: space-between;
     gap: 24px;
     margin-right: 10px;
 
-    &-login{
-        @include size(154px, 58px);
-        border-radius: 225px;  
-        
-        &:hover{
-            background-color: var(--color-secondary); 
-        }
+    &-login {
+      @include size(154px, 58px);
+      border-radius: 225px;
+
+      &:hover {
+        background-color: var(--color-secondary);
+      }
     }
 
-    &-cart{
-        @include center;
-        @include size(60px, 60px);
-        border-radius: 100%;  
+    &-cart {
+      @include center;
+      @include size(60px, 60px);
+      border-radius: 100%;
 
-        &:hover{
-            background-color: var(--color-secondary); 
-        }
-        
+      &:hover {
+        background-color: var(--color-secondary);
+      }
     }
- }
+  }
+}
 
+@media (max-width: 768px) {
+  .header {
+    &__menu {
+      display: none;
+    }
 
+    &__buttons {
+      display: none;
+    }
+  }
 }

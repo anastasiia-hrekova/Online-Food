@@ -15,6 +15,8 @@
     &__img {
         position: absolute;
         z-index: -1;
+        max-width: 1241px;
+        max-height:827px;
     }
 
     &__title {
@@ -39,4 +41,32 @@
         }
     }
 
+}
+
+@media (max-width: 768px) {
+
+    .business-section {
+        &__img {
+            width: 95%;
+        
+        }
+
+        &__block {
+            margin-top: 30%;
+            @include text(18px, 600, 1.4);
+            gap: 12px;
+        }
+
+        &__title {
+            @include text(25px, 700, 1.3);
+            
+        }
+
+        &__btn {
+            @include center;
+            @include size(175px, 57px);
+            @include text(18px, 500, 1.7);
+        }
+
+    }
 }

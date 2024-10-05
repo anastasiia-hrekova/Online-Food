@@ -42,10 +42,26 @@
             }
         }
     }
+}
 
-    &__img{
-        max-width: 751px;
-        max-height: 500px;
-        flex-grow: 1;
+@media (max-width: 768px){
+
+    .explore-section{
+    padding-top: 76px;
+    padding-bottom: 76px;
+    background-image: none;
+    background-color: rgba(255, 139, 0, 0.1);
+    text-align: center;
+
+    &__block{
+        @include center;
+        max-width: 527px;
+
+        &-title{
+            @include text(40px, 700, 1.3);
+        }
     }
+    }
+
+    
 }

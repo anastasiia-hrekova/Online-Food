@@ -104,3 +104,15 @@
         @include text(16px, 400, 1);
     }
 }
+
+@media (max-width: 768px) {
+
+    .footer{
+        padding-top: 50px; 
+
+        &__container{
+            display: none;
+        }
+
+    }
+}

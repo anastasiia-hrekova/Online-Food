@@ -3,7 +3,7 @@
     flex-direction: column;
     gap: 42px;
     padding-top: 78px;
-    padding-bottom: 60px;
+    padding-bottom: 105px;
 
     &__title {
         display: flex;
@@ -52,6 +52,7 @@
         grid-template-rows: 1fr;
         gap: 28px;
         cursor: pointer;
+
         
     }
 
@@ -64,6 +65,9 @@
         color: #000;
         padding-right: 15px;
       
+        &-minus{
+            display: none;
+        }
 
     }
 
@@ -86,6 +90,14 @@
 details[open] {
     padding:  30px 15px;
     height: auto;
+
+    .asked-section__question-plus{
+        display: none;
+    }
+
+    .asked-section__question-minus{
+        display: flex;
+    }
 
 }
 

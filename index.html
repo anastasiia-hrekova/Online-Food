@@ -1,76 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.min.css" />
 
-  <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&family=Merienda:wght@300..900&family=Playfair+Display:wght@700&family=Poppins:wght@100;400;500;600&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&family=Merienda:wght@300..900&family=Playfair+Display:wght@700&family=Poppins:wght@100;400;500;600&display=swap"
-    rel="stylesheet" />
+    <title lang="en">Online food</title>
+  </head>
 
-  <title lang="en">Online food</title>
-</head>
-
-<body>
-  <header class="header">
-    <div class="container">
-      <nav class="header__nav">
-        <a href="./index.html"><img class="header__nav-logo" src="./images/header-logo.svg" alt="FoodTime" /></a>
-        <ul class="header__menu">
-          <li>Home</li>
-          <li>Blog</li>
-          <li>About us</li>          
-          <select class="header__menu-list" name="language">
-            <option value="EN">EN</option>
-            <option value="UA">UA</option>
-          </select>
-        </ul>
-        <div class="header__buttons">
-          <button class="button header__buttons-login" type="button">Login</button>
-          <button class="button header__buttons-cart" type="button">
-            <img src="./images/cart.svg" alt="cart" class="button__icon" width="28px" height="30px"/>
-          </button>
-        </div>
-      </nav>
-    </div>
-  </header>
-  <main>
-   <div class="hero-section">
+  <body>
+    <header class="header">
       <div class="container">
-        <div class="hero-section__container">
-          <div class="hero-section__block">
-            <h1 class="hero-section__title">
-              Order food online from your favourite local restaurants<span class="color">.</span>
-            </h1>
-            <p class="hero-section__text">
-              Freshly made food delivered to your door.
-            </p>
-            <div class="hero-section__search">
-              <img class="hero-section__search-icon" src="./images/sight.png" alt="search" > 
-              <input type="text" class="hero-section__search-input" placeholder="Enter your location" />
-              <button type="button" class="button hero-section__search-btn">
-                <img src="./images/search.svg" alt="search" width="18px" height="18px">
-                Search</button>
-            </div>
+        <nav class="header__nav">
+          <a href="./index.html"
+            ><img
+              class="header__nav-logo"
+              src="./images/header-logo.svg"
+              alt="FoodTime"
+          /></a>
+          <ul class="header__menu">
+            <li>Home</li>
+            <li>Blog</li>
+            <li>About us</li>
+            <select class="header__menu-list" name="language">
+              <option value="EN">EN</option>
+              <option value="UA">UA</option>
+            </select>
+          </ul>
+          <div class="header__buttons">
+            <button class="button header__buttons-login" type="button">
+              Login
+            </button>
+            <button class="button header__buttons-cart" type="button">
+              <img
+                src="./images/cart.svg"
+                alt="cart"
+                class="button__icon"
+                width="28px"
+                height="30px"
+              />
+            </button>
           </div>
-          <div class="hero-section__delivery">
-            <div class="hero-section__delivery-block">
-              <h2 class="hero-section__delivery-title">
-                <img class="hero-section__delivery-icon" src="./images/tick.svg" alt="tick" >200k+
-              </h2>
-              <p class="hero-section__delivery-text">People Delivered</p>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="hero-section">
+        <div class="container">
+          <div class="hero-section__container">
+            <div class="hero-section__block">
+              <h1 class="hero-section__title">
+                Order food online from your favourite local restaurants<span
+                  class="color"
+                  >.</span
+                >
+              </h1>
+              <p class="hero-section__text">
+                Freshly made food delivered to your door.
+              </p>
+              <div class="hero-section__search">
+                <img
+                  class="hero-section__search-icon"
+                  src="./images/sight.png"
+                  alt="search"
+                />
+                <input
+                  type="text"
+                  class="hero-section__search-input"
+                  placeholder="Enter your location"
+                />
+                <button type="button" class="button hero-section__search-btn">
+                  <img
+                    src="./images/search.svg"
+                    alt="search"
+                    width="18px"
+                    height="18px"
+                  />
+                  Search
+                </button>
+              </div>
             </div>
-            <img class="hero-section__img" src="./images/hero-section.png" alt="Omlet" />
+            <div class="hero-section__delivery">
+              <div class="hero-section__delivery-block">
+                <h2 class="hero-section__delivery-title">
+                  <img
+                    class="hero-section__delivery-icon"
+                    src="./images/tick.svg"
+                    alt="tick"
+                  />200k+
+                </h2>
+                <p class="hero-section__delivery-text">People Delivered</p>
+              </div>
+              <img
+                class="hero-section__img"
+                src="./images/hero-section.png"
+                alt="Omlet"
+              />
+            </div>
           </div>
         </div>
       </div>
-    </div> 
-   <div class="explore-section">
+      <div class="explore-section">
         <div class="container">
           <div class="explore-section__block">
             <h2 class="explore-section__block-title">
@@ -78,18 +116,23 @@
             </h2>
             <p class="explore-section__block-text">
               Lorem ipsum dolor sit amet consectetur. Ornare massa nunc nibh
-              tristique. Non ligula tristique ut ut libero sit convallis maecenas.
-              At egestas auctor porta mattis.
+              tristique. Non ligula tristique ut ut libero sit convallis
+              maecenas. At egestas auctor porta mattis.
             </p>
             <button type="button" class="button explore-section__block-btn">
               Explore
-              <img src="./images/arrow.svg" alt="arrow" width="16" height="11">
+              <img
+                src="./images/arrow.svg"
+                alt="arrow"
+                width="16"
+                height="11"
+              />
             </button>
           </div>
           <!-- <img class="explore-section__img" src="./images/explore-section.jpg" alt="man-on-bicycle"> -->
         </div>
       </div>
-    <div class="assets-section">
+      <div class="assets-section">
         <div class="container">
           <ul class="assets-section__block">
             <li class="assets-section__items">
@@ -138,11 +181,16 @@
             </li>
           </ul>
         </div>
-      </div> 
-       <div class="business-section">
+      </div>
+      <div class="business-section">
         <div class="container">
-          <img class="business-section__img" src="./images/chef-img.jpg" alt="restorant-chef" max-width="1241px"
-          max-height = "827px">
+          <img
+            class="business-section__img"
+            src="./images/chef-img.jpg"
+            alt="restorant-chef"
+            max-width="1241px"
+            max-height="827px"
+          />
           <div class="business-section__block">
             <h2 class="business-section__title">
               Want to be a part of Foodtime?
@@ -152,11 +200,16 @@
             </p>
             <button class="business-section__btn" type="button">
               Get started
-              <img src="./images/arrow.svg" alt="arrow" width="16" height="11">
+              <img
+                src="./images/arrow.svg"
+                alt="arrow"
+                width="16"
+                height="11"
+              />
             </button>
           </div>
         </div>
-      </div> 
+      </div>
       <div class="asked-section">
         <div class="container">
           <h2 class="asked-section__title">Frequently asked questions</h2>
@@ -164,98 +217,185 @@
             <button class="button asked-section__buttons-general" type="button">
               General
             </button>
-            <button class="button asked-section__buttons-business" type="button">
+            <button
+              class="button asked-section__buttons-business"
+              type="button"
+            >
               For business
             </button>
           </div>
           <div class="asked-section__questions">
             <details class="asked-section__details">
-              <summary class="asked-section__question">What de I need to apply for the account? 
-                <img class="asked-section__question-icon" src="./images/🦆 icon _Plus_.svg" alt="look answer">
+              <summary class="asked-section__question">
+                What de I need to apply for the account?
+                <img
+                  class="asked-section__question-plus"
+                  src="./images/🦆 icon _Plus_.svg"
+                  alt="look answer"
+                />
+                <img
+                  class="asked-section__question-minus"
+                  src="./images/🦆 icon _minus_.svg"
+                  alt="close answer"
+                />
               </summary>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id enim animi placeat nam dolor obcaecati.
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id enim
+              animi placeat nam dolor obcaecati.
             </details>
             <details class="asked-section__details">
-              <summary class="asked-section__question">How the subscription process works?
-                <img class="asked-section__question-icon" src="./images/🦆 icon _Plus_.svg" alt="look answer">
+              <summary class="asked-section__question">
+                How the subscription process works?
+                <img
+                  class="asked-section__question-plus"
+                  src="./images/🦆 icon _Plus_.svg"
+                  alt="look answer"
+                />
+                <img
+                  class="asked-section__question-minus"
+                  src="./images/🦆 icon _minus_.svg"
+                  alt="close answer"
+                />
               </summary>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam inventore nemo dolore. Voluptatem soluta, sapiente totam velit est perspiciatis itaque praesentium saepe tenetur inventore a.
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam
+              inventore nemo dolore. Voluptatem soluta, sapiente totam velit est
+              perspiciatis itaque praesentium saepe tenetur inventore a.
             </details>
             <details class="asked-section__details">
-              <summary class="asked-section__question">What de I need to apply for the account?
-                <img class="asked-section__question-icon" src="./images/🦆 icon _Plus_.svg" alt="look answer">
+              <summary class="asked-section__question">
+                What de I need to apply for the account?
+                <img
+                  class="asked-section__question-plus"
+                  src="./images/🦆 icon _Plus_.svg"
+                  alt="look answer"
+                />
+                <img
+                  class="asked-section__question-minus"
+                  src="./images/🦆 icon _minus_.svg"
+                  alt="close answer"
+                />
               </summary>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id enim animi placeat nam dolor obcaecati.
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id enim
+              animi placeat nam dolor obcaecati.
             </details>
             <details class="asked-section__details">
-              <summary class="asked-section__question">What de I need to apply for the account?
-                <img class="asked-section__question-icon" src="./images/🦆 icon _Plus_.svg" alt="look answer">
+              <summary class="asked-section__question">
+                What de I need to apply for the account?
+                <img
+                  class="asked-section__question-plus"
+                  src="./images/🦆 icon _Plus_.svg"
+                  alt="look answer"
+                />
+                <img
+                  class="asked-section__question-minus"
+                  src="./images/🦆 icon _minus_.svg"
+                  alt="close answer"
+                />
               </summary>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id enim animi placeat nam dolor obcaecati.
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id enim
+              animi placeat nam dolor obcaecati.
             </details>
             <details class="asked-section__details">
-              <summary class="asked-section__question">What de I need to apply for the account?
-                <img class="asked-section__question-icon" src="./images/🦆 icon _Plus_.svg" alt="look answer">
+              <summary class="asked-section__question">
+                What de I need to apply for the account?
+                <img
+                  class="asked-section__question-plus"
+                  src="./images/🦆 icon _Plus_.svg"
+                  alt="look answer"
+                />
+                <img
+                  class="asked-section__question-minus"
+                  src="./images/🦆 icon _minus_.svg"
+                  alt="close answer"
+                />
               </summary>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id enim animi placeat nam dolor obcaecati.
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id enim
+              animi placeat nam dolor obcaecati.
             </details>
             <details class="asked-section__details">
-              <summary class="asked-section__question"> Is foodtime available 24 hours?
-                <img class="asked-section__question-icon" src="./images/🦆 icon _Plus_.svg" alt="look answer">
+              <summary class="asked-section__question">
+                Is foodtime available 24 hours?
+                <img
+                  class="asked-section__question-plus"
+                  src="./images/🦆 icon _Plus_.svg"
+                  alt="look answer"
+                />
+                <img
+                  class="asked-section__question-minus"
+                  src="./images/🦆 icon _minus_.svg"
+                  alt="close answer"
+                />
               </summary>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore voluptatum eius aperiam et error praesentium eum esse quisquam doloremque atque?
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore
+              voluptatum eius aperiam et error praesentium eum esse quisquam
+              doloremque atque?
             </details>
             <details class="asked-section__details">
-              <summary class="asked-section__question"> Is there any hidden fee included?
-                <img class="asked-section__question-icon" src="./images/🦆 icon _Plus_.svg" alt="look answer">
+              <summary class="asked-section__question">
+                Is there any hidden fee included?
+                <img
+                  class="asked-section__question-plus"
+                  src="./images/🦆 icon _Plus_.svg"
+                  alt="look answer"
+                />
+                <img
+                  class="asked-section__question-minus"
+                  src="./images/🦆 icon _minus_.svg"
+                  alt="close answer"
+                />
               </summary>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore voluptatum eius aperiam et error praesentium eum esse quisquam doloremque atque?
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore
+              voluptatum eius aperiam et error praesentium eum esse quisquam
+              doloremque atque?
             </details>
           </div>
         </div>
-      </div> 
-      <!-- <div class="app-section">
+      </div>
+      <div class="app-section">
         <div class="container">
-          <h2 class="app-section__title">Put us in your pocket</h2>
-          <p class="app-section__text">
-            Download our app from google play or app store and you don’t have to
-            be worry about your food anymore.
-          </p>
-          <div class="app-section__links">
-            <a class="app-section__link" href="#" target="_blank"
-              ><img
-                src="./images/AppStore.png"
-                alt="appstore"
-                width="243"
-                height="89"
-            /></a>
-            <a class="app-section__link" href="#" target="_blank"
-              ><img
-                src="./images/GooglePlay.png"
-                alt="googleplay"
-                width="243"
-                height="89"
-            /></a>
+          <div class="app-section__block">
+            <div class="app-section__container">
+              <div class="app-section__container-text">
+                <h2 class="app-section__container-text-title">
+                  Put us in your pocket
+                </h2>
+                <p class="app-section__container-text-paragraph">
+                  Download our app from google play or app store and you don’t
+                  have to be worry about your food anymore.
+                </p>
+              </div>
+              <div class="app-section__links">
+                <a class="app-section__link" href="#" target="_blank"
+                  ><img
+                    src="./images/AppStore.png"
+                    alt="appstore"
+                /></a>
+                <a class="app-section__link" href="#" target="_blank"
+                  ><img
+                    src="./images/GooglePlay.png"
+                    alt="googleplay"
+                /></a>
+              </div>
+            </div>
+            <img
+              class="app-section__image"
+              src="./images/mobile-app.png"
+              alt="mobileApp"
+            />
           </div>
-          <img
-            src="./images/mobile-app.jpg"
-            alt="mobileApp"
-            width="711"
-            height="474"
-          />
         </div>
-      </div>  -->
-  </main>
-  <!-- <footer class="footer">
+      </div>
+    </main>
+<footer class="footer">
       <div class="container">
         <div class="footer__block">
-          <img class="footer__block-logo" src="./images/logo.svg" alt="Logo" />
-          <p class="footer__block-text">
+          <div class="footer__container">
+            <img class="footer__container-logo" src="./images/logo.svg" alt="Logo" />
+          <p class="footer__container-text">
             Lorem ipsum dolor sit amet consectetur. Odio amet natoque tortor
             convallis. Bibendum sapien suspendisse ipsum urna malesuada elit.
             Bibendum vitae nibh scelerisque sed aliquam ullamcorper est.
           </p>
-  
+          </div>  
           <div class="footer__links">
             <p class="footer__links-title">Quick links</p>
             <ul class="footer__links-list">
@@ -281,9 +421,8 @@
             </ul>
           </div>
         </div>
-        <p class="footer__root">© 2023 Nayeemur R Sakib</p>
+        <p class="footer__root">© 2023 Nayeemur R Sakib</p>        
       </div>
-    </footer> -->
-</body>
-
+    </footer> 
+  </body>
 </html>

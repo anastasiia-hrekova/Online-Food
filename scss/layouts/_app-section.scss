@@ -61,9 +61,17 @@
       flex-direction: column;
     }
 
+    &__link{
+      width:50%;
+    }
+
     &__container{
       @include center;
       text-align: center;
+
+      &-text{
+        width: 90%;
+      }
     }
 
     &__image {

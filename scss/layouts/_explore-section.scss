@@ -1,12 +1,14 @@
 .explore-section{
-    @include center;
-    flex-direction: row;
-    padding-top: 142px;
-    background-image: url('../images/explore-section.png');
-    background-repeat: no-repeat;
-    background-size: auto;
-    background-position: center right 50px;
-    padding-bottom: 146px;
+    @include center;    
+    
+    &__container{
+        @include center;
+        flex-direction: row; 
+        gap: 30px;  
+        padding-top: 100px;
+    
+    }
+    
 
     &__block{
         display: flex;
@@ -46,12 +48,19 @@
 
 @media (max-width: 768px){
 
-    .explore-section{
-    padding-top: 76px;
-    padding-bottom: 76px;
-    background-image: none;
+    .explore-section{    
     background-color: rgba(255, 139, 0, 0.1);
-    text-align: center;
+    
+
+    &__container{
+        text-align: center;
+        padding-top: 76px;
+    padding-bottom: 76px;
+
+        &-image{
+            display: none;
+        }
+    }
 
     &__block{
         @include center;

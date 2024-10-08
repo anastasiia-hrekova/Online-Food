@@ -5,6 +5,7 @@
   background-color: rgba(255, 139, 0, 0.1);
 
   &__block {
+    width: 100vw;
     @include center;
     flex-direction: row;
     gap: 30px;
@@ -12,6 +13,7 @@
   }
 
   &__container{
+    width: 50%;
       display: flex;
       flex-direction: column;
       gap: 30px;
@@ -34,26 +36,32 @@
   }
 
   &__links{
+   
     @include center;
     flex-direction: row;
     gap: 22px;
   }
 
-  &__link{
-    max-width: 243px;
+  &__link{   
+
+    &-img{
+      width: 100%;
+      max-width: 243px;
     max-height: 89px;
+    }
   }
 
   
 
   &__image {
+    width: 50%;
     max-width: 711px;
     max-height: 474px;
   }
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 876px) {
 
   .app-section {
     &__block {

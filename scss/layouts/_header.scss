@@ -1,15 +1,17 @@
 .header {
+  width: 100vw;
   @include center;
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%; 
-
-  &__block{  
-    display: flex;
-    flex-direction: row;
   border-bottom: 1px solid rgb(63, 63, 63, 0.2);
   padding-bottom: 20px;
+  margin:0 auto;
+
+  &__block{  
+    width: 100%;
+    @include center;
+    flex-direction: row;  
   }
 
   &__nav {
@@ -48,6 +50,7 @@
     display: flex;
     justify-content: space-between;
     gap: 24px;
+    flex-grow: 1;
     margin-right: 10px;
 
     &-login {
@@ -71,7 +74,30 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1375px) {
+  .header {
+ 
+    &__block{
+      @include center;
+      margin: auto;
+    }
+
+    &__nav{
+      width: 100%;
+
+      &-logo {
+        margin-right: 30%;
+      }
+    }
+
+    &__menu{
+      flex-grow: 2;
+      gap: 40px;
+    }
+  }
+}
+
+@media (max-width: 876px) {
   .header {
 
     &__nav {

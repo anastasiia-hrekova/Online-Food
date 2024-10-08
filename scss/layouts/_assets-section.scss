@@ -2,6 +2,7 @@
   @include center;
 
   &__block {
+    width: 100%;
     @include center;
     flex-direction: row;
     gap: 62px;
@@ -13,7 +14,8 @@
     @include center;
     flex-direction: column;
     gap: 12px;
-    @include size(365px, 365px);
+    width: calc(33.3% - 20px);
+   height: 365px;
 
     &:hover {
       background-color: rgba(57, 108, 3, 0.05);
@@ -38,7 +40,38 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1375px) {
+  .assets-section {
+    @include center;
+
+    &__block {
+      gap: 10px;
+    }
+
+    &__items {
+      width: calc(33.3% - 20px);
+
+      &-title {
+        @include text(24px, 600, 1.4);
+        text-align: center;
+      }
+
+      &-text {
+        @include text(18px, 500, 1.4);
+        text-align: center;
+      }
+
+      &-img {
+        align-self: center;
+        margin: 0;
+      }
+    }
+
+  }
+}
+
+
+@media (max-width: 876px) {
   .assets-section {
     padding-bottom: 40px;
 

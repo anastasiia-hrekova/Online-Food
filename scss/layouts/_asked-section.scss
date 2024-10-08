@@ -54,6 +54,7 @@
     grid-template-rows: 1fr;
     gap: 28px;
     cursor: pointer;
+
   }
 
   &__question {
@@ -64,6 +65,7 @@
     @include text(18px, 500, 2);
     color: #000;
     padding-right: 15px;
+    list-style: none;
 
     &-minus {
       display: none;
@@ -101,6 +103,10 @@ details[open] summary {
   border: none;
   padding-right: 0;
   padding-bottom: 20px;
+}
+
+details[open] summary::before {
+  content: '';
 }
 
 @media (max-width: 768px) {
@@ -150,7 +156,7 @@ details[open] summary {
     }
 
     &__details {
-      height: 46px;
+      height: auto;
     }
   }
 

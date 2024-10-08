@@ -40,22 +40,33 @@
 
 @media (max-width: 768px) {
   .assets-section {
+    padding-bottom: 40px;
+
     &__block {
       @include center;
       flex-direction: column;
-      gap: 30px;
-      padding-top: 42px;
-      padding-bottom: 80px;
+      gap: 20px;
+      padding-top: 30px;
+      padding-bottom: 30px;
     }
 
     &__items {
+      width: 90vw;
+     
       &-title {
-        @include text(26px, 600, 1.4);
+        @include text(24px, 600, 1.4);
+        text-align: center;
+      }
+
+      &-text {
+        text-align: center;
       }
 
       &-img {
         align-self: center;
+        margin: 0;
       }
+
     }
   }
 }

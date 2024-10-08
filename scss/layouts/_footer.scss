@@ -1,104 +1,104 @@
-.footer{
+.footer {
     @include center;
     padding-top: 95px;
     padding-bottom: 40px;
     background-color: #224300;
     color: #dedede;
 
-    &__block{
+    &__block {
         display: flex;
         align-items: center;
         justify-content: space-between;
         flex-direction: row;
         padding-bottom: 74px;
-    
+
     }
 
-    &__links{
+    &__links {
         display: flex;
         align-items: start;
         flex-direction: column;
         gap: 35px;
 
-        &-title{
+        &-title {
             @include text(20px, 600, 1);
             color: #fff;
         }
 
-        &-list{
+        &-list {
             display: flex;
             align-items: start;
             flex-direction: column;
             gap: 13px;
         }
 
-        &-item{
+        &-item {
             @include text(20px, 400, 1);
         }
     }
 
-    &__contacts{
+    &__contacts {
         display: flex;
         align-items: start;
         flex-direction: column;
         gap: 35px;
 
-        &-title{
+        &-title {
             @include text(20px, 600, 1);
             color: #fff;
         }
 
-        &-list{
+        &-list {
             display: flex;
             align-items: start;
             flex-direction: column;
             gap: 13px;
         }
 
-        &-item{
+        &-item {
             @include text(20px, 400, 1);
         }
     }
 
-    &__social{
+    &__social {
         display: flex;
         align-items: start;
         flex-direction: column;
         gap: 35px;
 
-        &-title{
+        &-title {
             @include text(20px, 600, 1);
             color: #fff;
         }
 
-        &-list{
+        &-list {
             display: flex;
             align-items: start;
             flex-direction: column;
             gap: 13px;
         }
 
-        &-item{
+        &-item {
             @include text(20px, 400, 1);
         }
     }
 
-    &__container{
+    &__container {
         display: flex;
         flex-direction: column;
         max-width: 485px;
         gap: 10;
 
-        &-logo{
+        &-logo {
             max-width: 218px;
         }
 
-        &-text{
+        &-text {
             @include text(18px, 400, 1.6);
         }
     }
 
-    &__root{
+    &__root {
         display: flex;
         justify-content: center;
         @include text(16px, 400, 1);
@@ -107,12 +107,51 @@
 
 @media (max-width: 768px) {
 
-    .footer{
-        padding-top: 50px; 
+    .footer {
+        padding-top: 50px;
 
-        &__container{
+        &__container {
             display: none;
         }
 
+        &__block {
+            display: flex;
+            align-items: start;
+            justify-content: space-around;
+            width: 90vw;
+            gap: 20px;
+        }
+
+        &__links {
+            &-title {
+                @include text(18px, 600, 1);
+            }
+
+            &-item{
+                @include text(16px, 400, 1.6);
+            }
+        }
+
+        &__contacts{
+            &-title{
+                @include text(18px, 600, 1);
+            }
+
+            &-item{
+                @include text(16px, 400, 1.6);
+
+            }
+        }
+
+        &__social{
+            &-title{
+                @include text(18px, 600, 1);
+           }
+
+           &-item{
+            @include text(16px, 400, 1.6);
+
+           }
+        }
     }
 }

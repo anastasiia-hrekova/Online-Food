@@ -1,29 +1,30 @@
 .header {
-  width: 100vw;
-  @include center;
+  width: 100%;
   position: absolute;
-  top: 0;
-  left: 0;
   border-bottom: 1px solid rgb(63, 63, 63, 0.2);
   padding-bottom: 20px;
   margin:0 auto;
+  z-index: 2;
 
   &__block{  
-    width: 100%;
-    @include center;
-    flex-direction: row;  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;    
   }
 
   &__nav {
-    @include center;
-    max-width: 1240px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;    
+    width: 100%;
     padding-top: 20px;
 
     &-logo {
-      display: flex;
       @include size(150px, 50px);
-      margin-right: 316px;
-      flex-grow: 1;
+      margin-right: 54px;
+      
     }
   }
 
@@ -31,18 +32,27 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    flex-grow: 1;
     gap: 70px;
     @include text(18px, 500, 2);
     color: var(--color-black);
-    margin-right: 94px;
 
+    &-item{
+      cursor: pointer;
+
+      &:hover{
+        color: var(--color-secondary);
+      }
+     
+    } 
     &-list {
       font-family: "Poppins", sans-serif;
       @include text(18px, 500, 2);
       color: var(--color-black);
       border: none;
       background-color: transparent;
+
+      
+  
     }
   }
 
@@ -50,7 +60,6 @@
     display: flex;
     justify-content: space-between;
     gap: 24px;
-    flex-grow: 1;
     margin-right: 10px;
 
     &-login {

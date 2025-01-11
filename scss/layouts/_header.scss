@@ -7,14 +7,8 @@
   z-index: 2;
 
   &__block {
-<<<<<<< HEAD
     width: 100%;
     @include center;
-=======
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
->>>>>>> cb2841c22ebd553bfa6482d1a93820c11affbc35
     flex-direction: row;
   }
 
@@ -39,11 +33,8 @@
     gap: 70px;
     @include text(18px, 500, 2);
     color: var(--color-black);
-<<<<<<< HEAD
     margin-right: 94px;
     cursor: pointer;
-=======
->>>>>>> cb2841c22ebd553bfa6482d1a93820c11affbc35
 
     &-item {
       cursor: pointer;
@@ -115,11 +106,6 @@
 
 @media (max-width: 876px) {
   .header {
-<<<<<<< HEAD
-=======
-    @include center;
-
->>>>>>> cb2841c22ebd553bfa6482d1a93820c11affbc35
     &__nav {
       @include center;
       flex-direction: column;

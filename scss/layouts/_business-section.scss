@@ -1,95 +1,90 @@
-.business-section {    
-    padding-top: 55px;
-    padding-bottom: 78px;
+.business-section {
+  padding-top: 55px;
+  padding-bottom: 78px;
 
-    &__container {
-        @include center;
-        margin: auto;
-        width: 90%;
-        height: 860px;
-        background-image: url(../images/chef-img.jpg);
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: center;
+  &__container {
+    @include center;
+    margin: auto;
+    width: 90%;
+    height: 860px;
+    background-image: url(../images/chef-img.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+
+  &__block {
+    @include center;
+    flex-direction: column;
+    gap: 18px;
+    color: #fff;
+    @include text(24px, 600, 1.4);
+    padding-top: 600px;
+    padding-bottom: 30px;
+  }
+
+  &__title {
+    @include text(40px, 700, 1.3);
+  }
+
+  &__btn {
+    @include center;
+    @include size(275px, 67px);
+    border: none;
+    border-radius: 224px;
+    background-color: var(--color-secondary);
+    font-family: 'Poppins', sans-serif;
+    @include text(22px, 500, 1.7);
+    color: #fff;
+    gap: 12px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: transparent;
+      border: 1px solid var(--color-secondary);
+      transition: 0.3s ease;
     }
-
-    &__block {
-        @include center;
-        flex-direction: column;
-        gap: 18px;
-        color: #fff;
-        @include text(24px, 600, 1.4);
-        padding-top: 600px;
-        padding-bottom: 30px;
-    }
-
-    &__title {
-        @include text(40px, 700, 1.3);
-
-    }
-
-    &__btn {
-        @include center;
-        @include size(275px, 67px);
-        border: none;
-        border-radius: 224px;
-        background-color: var(--color-secondary);
-        font-family: "Poppins", sans-serif;
-        @include text(22px, 500, 1.7);
-        color: #fff;
-        gap: 12px;
-
-        &:hover {
-            background-color: transparent;
-            border: 1px solid var(--color-secondary);
-        }
-    }
-
+  }
 }
 
 @media (max-width: 1375px) {
-    .business-section {
-        padding-top: 0px;
-        padding-bottom: 15px;
+  .business-section {
+    padding-top: 0px;
+    padding-bottom: 15px;
 
-        &__block {
-            padding-top: 400px;
-        }
+    &__block {
+      padding-top: 400px;
     }
-
+  }
 }
 
 @media (max-width: 876px) {
+  .business-section {
+    background-color: rgba(255, 139, 0, 0.1);
 
-    .business-section {
-        background-color: rgba(255, 139, 0, 0.1);
-        
-
-        &__container {
-            height: 400px;
-            @include center;
-            background-image: none;
-
-        }
-
-        &__block {
-            gap: 12px;
-            width: 100%;
-            padding-top: 50px;
-            padding-bottom: 30px;
-            color: var(--color-black);
-        }
-
-        &__title {
-            text-align: center;
-            @include text(30px, 600, 1.3);
-        }
-
-        &__btn {
-            @include center;
-            @include size(175px, 57px);
-            @include text(16px, 500, 1.7);
-        }
-
+    &__container {
+      height: 400px;
+      @include center;
+      background-image: none;
     }
+
+    &__block {
+      gap: 12px;
+      width: 100%;
+      padding-top: 50px;
+      padding-bottom: 30px;
+      color: var(--color-black);
+    }
+
+    &__title {
+      text-align: center;
+      @include text(30px, 600, 1.3);
+    }
+
+    &__btn {
+      @include center;
+      @include size(175px, 57px);
+      @include text(16px, 500, 1.7);
+    }
+  }
 }

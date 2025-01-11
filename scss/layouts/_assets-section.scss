@@ -15,11 +15,13 @@
     flex-direction: column;
     gap: 12px;
     width: calc(33.3% - 20px);
-   height: 365px;
+    height: 365px;
 
     &:hover {
       background-color: rgba(57, 108, 3, 0.05);
       border-radius: 15px;
+      box-shadow: 5px 5px 10px rgba(23, 43, 1, 0.1);
+      transition: 0.3s ease;
     }
 
     &-title {
@@ -66,10 +68,8 @@
         margin: 0;
       }
     }
-
   }
 }
-
 
 @media (max-width: 876px) {
   .assets-section {
@@ -85,7 +85,7 @@
 
     &__items {
       width: 90vw;
-     
+
       &-title {
         @include text(24px, 600, 1.4);
         text-align: center;
@@ -99,7 +99,6 @@
         align-self: center;
         margin: 0;
       }
-
     }
   }
 }

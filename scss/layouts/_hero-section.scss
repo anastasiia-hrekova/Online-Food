@@ -1,5 +1,5 @@
 .hero-section {
-  @include center;  
+  @include center;
   background-color: rgb(107, 145, 66, 0.1);
 
   &__container {
@@ -8,31 +8,30 @@
     flex-direction: row;
     position: relative;
     padding-top: 194px;
-  padding-bottom: 56px;
+    padding-bottom: 56px;
 
     &::before {
       display: flex;
       position: absolute;
       @include size(288px, 288px);
-      background-image: url("../images/leaf1.png");
+      background-image: url('../images/leaf1.png');
       background-repeat: no-repeat;
-      content: "";
-      left: -30px;
+      content: '';
+      left: -10%;
       top: 0;
     }
-  
+
     &::after {
       display: flex;
       position: absolute;
       @include size(288px, 288px);
-      background-image: url("../images/leaf2.png");
+      background-image: url('../images/leaf2.png');
       background-repeat: no-repeat;
-      content: "";
+      content: '';
       top: 108px;
-      right: -30px;
+      right: -10%;
       z-index: -2;
     }
-
   }
 
   &__block {
@@ -45,7 +44,7 @@
   }
 
   &__title {
-    font-family: "Merienda", sans-serif;
+    font-family: 'Merienda', sans-serif;
     @include text(65px, 700, 1.3);
     color: var(--color-primary);
     max-width: 682px;
@@ -85,14 +84,16 @@
     &-btn {
       @include center;
       position: absolute;
-      font-family: "Poppins", sans-serif;
+      font-family: 'Poppins', sans-serif;
       @include size(210px, 69px);
       gap: 8px;
       border-radius: 100px;
       transform: translateX(510px);
+      cursor: pointer;
 
       &:hover {
         background-color: var(--color-secondary);
+        transition: 0.3s ease;
       }
     }
   }
@@ -139,6 +140,16 @@
   &__img {
     z-index: -1;
     padding-top: 24px;
+    animation: spin 2s linear forwards;
+
+    @keyframes spin {
+      from {
+        transform: rotate(300deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
   }
 }
 
@@ -149,22 +160,19 @@
       width: 100%;
     }
 
-    &__block{
+    &__block {
       width: 50%;
     }
 
     &__img {
       width: 100%;
     }
-
   }
 }
 
 @media (max-width: 876px) {
   .hero-section {
-   
-
-    &__container{
+    &__container {
       @include center;
       width: 80vw;
       padding-top: 120px;
@@ -174,7 +182,7 @@
         left: 0;
         top: 0;
       }
-  
+
       &::after {
         display: none;
       }
@@ -205,12 +213,11 @@
         left: 0;
       }
 
-      &-input {     
+      &-input {
         height: 56px;
-
       }
 
-      &-btn { 
+      &-btn {
         display: none;
       }
     }
@@ -223,10 +230,8 @@
 
 @media (max-width: 440px) {
   .hero-section {
-
     &__search {
       display: none;
     }
   }
-
 }

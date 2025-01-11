@@ -6,12 +6,13 @@
   left: 0;
   border-bottom: 1px solid rgb(63, 63, 63, 0.2);
   padding-bottom: 20px;
-  margin:0 auto;
+  margin: 0 auto;
+  z-index: 2;
 
-  &__block{  
+  &__block {
     width: 100%;
     @include center;
-    flex-direction: row;  
+    flex-direction: row;
   }
 
   &__nav {
@@ -36,9 +37,10 @@
     @include text(18px, 500, 2);
     color: var(--color-black);
     margin-right: 94px;
+    cursor: pointer;
 
     &-list {
-      font-family: "Poppins", sans-serif;
+      font-family: 'Poppins', sans-serif;
       @include text(18px, 500, 2);
       color: var(--color-black);
       border: none;
@@ -56,9 +58,11 @@
     &-login {
       @include size(154px, 58px);
       border-radius: 225px;
+      cursor: pointer;
 
       &:hover {
         background-color: var(--color-secondary);
+        transition: 0.3s ease;
       }
     }
 
@@ -66,6 +70,7 @@
       @include center;
       @include size(60px, 60px);
       border-radius: 100%;
+      cursor: pointer;
 
       &:hover {
         background-color: var(--color-secondary);
@@ -76,13 +81,12 @@
 
 @media (max-width: 1375px) {
   .header {
- 
-    &__block{
+    &__block {
       @include center;
       margin: auto;
     }
 
-    &__nav{
+    &__nav {
       width: 100%;
 
       &-logo {
@@ -90,7 +94,7 @@
       }
     }
 
-    &__menu{
+    &__menu {
       flex-grow: 2;
       gap: 40px;
     }
@@ -99,7 +103,6 @@
 
 @media (max-width: 876px) {
   .header {
-
     &__nav {
       @include center;
       flex-direction: column;
@@ -107,7 +110,7 @@
 
       &-logo {
         display: flex;
-       margin: auto;
+        margin: auto;
       }
     }
 
